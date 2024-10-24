@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    font-family: 'poppins';
+    position: relative;
+}
+
+.footer {
+    font-size: 18px;
+    width: 90%;
+    background-color: #666666;
+    border: 2px solid rgb(57, 57, 57);
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 15% 75% 10%;
+    align-items: center;
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.footer-menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-menu a:hover {
+    color: greenyellow;
+    border-bottom: 1px solid white;
+}
+
+.footer-menu li:last-child {
+    margin-right: 0;
+}
+
+.footer-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons li:last-child {
+    margin-right: 0;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-icons a:hover {
+    color: greenyellow;
+    border-bottom: 1px solid white;
+}
+
+.footer-bottom {
+    margin-top: 0px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: small;
+    color: #a1a1a1;
+    font-family: monospace;
+}
+
+.image-logo {
+    width: 100px;
+}
+
+.image-logo:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+
+    .footer-menu {
+        text-align: left;
+    }
+
+    .footer-menu li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
